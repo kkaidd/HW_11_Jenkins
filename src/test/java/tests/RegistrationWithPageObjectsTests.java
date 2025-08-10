@@ -5,12 +5,11 @@ import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import utils.TestData;
 
-
+@Tag("simple")
 public class RegistrationWithPageObjectsTests extends TestBase{
 RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
-    @Tag("simple")
     void successfulSearchTest() {
         registrationPage.openPage()
         .removeBanner()
